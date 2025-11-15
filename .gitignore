@@ -1,0 +1,6 @@
+# Terraform build and state
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+crash.log
