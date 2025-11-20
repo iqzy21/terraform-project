@@ -74,5 +74,16 @@ sudo -u www-data sed -i 's/database_name_here/wordpress/' /srv/www/wordpress/wp-
 sudo -u www-data sed -i 's/username_here/wordpress/' /srv/www/wordpress/wp-config.php
 sudo -u www-data sed -i 's/password_here/wordpass/' /srv/www/wordpress/wp-config.php
 
+sudo sed -i "/^define( 'AUTH_KEY'/c\define( 'AUTH_KEY',         '#GG9y}4w^u-2k!_j|h}kn3Oi?catiDGD-i({n%K[o*a<T%U@yLIMu{W-[@Oajz?{' );" /srv/www/wordpress/wp-config.php
+sudo sed -i "/^define( 'SECURE_AUTH_KEY'/c\define( 'SECURE_AUTH_KEY',  ' B92,[+:KJk9lI/{jBkMDQZ8@4m;o^vNI-X+X^3u=wAsS,?%.D3<IEXc} aqsjQ=' );" /srv/www/wordpress/wp-config.php
+sudo sed -i "/^define( 'LOGGED_IN_KEY'/c\define( 'LOGGED_IN_KEY',    'qo+8>ov5$kzkD2MJo.r?Q<rY_P:l3KM!a^ /q/P1#42-?zN\`xW*J3M_|vhj>#+n ' );" /srv/www/wordpress/wp-config.php
+sudo sed -i "/^define( 'NONCE_KEY'/c\define( 'NONCE_KEY',        'Y5gytl )m/NJiS;>nDL/8|V!`3Bc-+2=v~-;OBvK]Fp=Y8yp&`$:#fntV.`Ks[!g' );" /srv/www/wordpress/wp-config.php
+sudo sed -i "/^define( 'AUTH_SALT'/c\define( 'AUTH_SALT',        '7Qj=>CvCw,QB6VKpX$Q CG}BRR$+K#WV<oJ}#flK&Y$+t{mzDS}fuz/6V7<$|*5A' );" /srv/www/wordpress/wp-config.php
+sudo sed -i "/^define( 'SECURE_AUTH_SALT'/c\define( 'SECURE_AUTH_SALT', 'Q)B+m|*9grvwbVr?|SQDJ8NY3SX7c_FM,_`LGU-E{R|VOROKg-8lKWFkd^V!!=G2' );" /srv/www/wordpress/wp-config.php
+sudo sed -i "/^define( 'LOGGED_IN_SALT'/c\define( 'LOGGED_IN_SALT',   'hAdad|1Q{Ku<c=`#>a+H-ZagNA->aoz(wy1NfK+WlsA5g0m`0k|5hC?H#!c~;V^g' );" /srv/www/wordpress/wp-config.php
+sudo sed -i "/^define( 'NONCE_SALT'/c\define( 'NONCE_SALT',       'O*dh+sbq@FJ=+~5{z((>oVnq G$Txt7m SM/y]6y~%QBSj_em(e.uZ1JS[k~CaY(' );" /srv/www/wordpress/wp-config.php
+
+
+
 
 
